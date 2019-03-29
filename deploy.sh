@@ -21,6 +21,8 @@ Options:
 
 
 run_build() {
+  curl https://raw.githubusercontent.com/FreshlySqueezedNerds/Rocs/master/docs/index.html.md --output source/index.html.md
+
   bundle exec middleman build --clean
 }
 
@@ -73,8 +75,6 @@ parse_args() {
 }
 
 main() {
-  curl https://raw.githubusercontent.com/FreshlySqueezedNerds/Rocs/master/docs/index.html.md --output source/index.html.md
-
   parse_args "$@"
 
   enable_expanded_output
