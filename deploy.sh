@@ -21,7 +21,8 @@ Options:
 
 
 run_build() {
-  curl https://raw.githubusercontent.com/FreshlySqueezedNerds/Rocs/master/docs/index.html.md --output source/index.html.md
+  cp ../Rocs/docs/index.html.md source/index.html.md
+  # curl https://raw.githubusercontent.com/FreshlySqueezedNerds/Rocs/master/docs/index.html.md --output source/index.html.md
 
   bundle exec middleman build --clean
 }

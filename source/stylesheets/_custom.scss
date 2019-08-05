@@ -41,3 +41,8 @@ dfn:hover::after,
 dfn:hover::before {opacity: 1;}
 dfn:hover::after {top: 30px;}
 dfn:hover::before {top: 20px;}
+
+.content h1 code, .content h2 code, .content h3 code, .content h4 code {
+  font-size: 1em;
+  background-color: transparent;
+}
